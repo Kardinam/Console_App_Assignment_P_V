@@ -10,7 +10,10 @@ namespace Assignment_P_V.Helpers
         public static List<Course> Courses = new List<Course>();
         public static List<Assignment> Assignments = new List<Assignment>();
         public static List<Trainer> Trainers = new List<Trainer>();
-
+        public static void CreateSyntheticData()
+        {
+            throw new NotImplementedException();
+        }
         public static void CreateEntity(string entityType)
         {
             switch (entityType)

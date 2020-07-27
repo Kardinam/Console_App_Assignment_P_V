@@ -12,7 +12,7 @@ namespace Assignment_P_V.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public List<Student> Students { get; set; }
-        public Course (string title, string type, string stream,DateTime startDate, DateTime endDate)
+        public Course(string title, string type, string stream, DateTime startDate, DateTime endDate)
         {
             Title = title;
             Type = type;
