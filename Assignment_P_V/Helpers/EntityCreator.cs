@@ -18,8 +18,8 @@ namespace Assignment_P_V.Helpers
             Student student4 = new Student("Kostas", "Vasillis", new DateTime(1996, 3, 21), 45000);
             Students.AddRange(new List<Student>() { student1, student2, student3, student4 });
 
-            Course course1 = new Course("Introduction to Web", "Part-Time", "Yes", new DateTime(2020, 2, 19), new DateTime(17 / 7 / 2020));
-            Course course2 = new Course("Advanced Web Programming", "Full-Time", "no", new DateTime(2020, 6, 11), new DateTime(16 / 6 / 2020));
+            Course course1 = new Course("Introduction to Web", "Part-Time", "Yes", new DateTime(2020, 2, 19), new DateTime(2020,7,20));
+            Course course2 = new Course("Advanced Web Programming", "Full-Time", "no", new DateTime(2020, 6, 11), new DateTime(2020,6,10));
             Courses.AddRange(new List<Course>() { course1, course2 });
 
             Assignment assignment1 = new Assignment("Create a Console App", "Application that manages an e-Class", new DateTime(2020, 8, 4), 3000, 3000);
@@ -76,7 +76,7 @@ namespace Assignment_P_V.Helpers
             string firstName = Console.ReadLine();
             Console.WriteLine("Please type the last Name");
             string lastName = Console.ReadLine();
-            Console.WriteLine("Please type the Date of Birth");
+            Console.WriteLine("Please type the Date of Birth. (dd/mm/yyyy)");
             DateTime dateOfBirth = Convert.ToDateTime(Console.ReadLine());
             Console.WriteLine("Please type the Tuition Fees");
             decimal tuitionFees = Convert.ToDecimal(Console.ReadLine());
@@ -116,9 +116,9 @@ namespace Assignment_P_V.Helpers
             string type = Console.ReadLine();
             Console.WriteLine("Please type the Stream");
             string stream = Console.ReadLine();
-            Console.WriteLine("Please type the Start Date");
+            Console.WriteLine("Please type the Start Date. (dd/mm/yyyy)");
             DateTime startDate = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine("Please type the End Date");
+            Console.WriteLine("Please type the End Date. (dd/mm/yyyy)");
             DateTime endDate = Convert.ToDateTime(Console.ReadLine());
             Course newCourse = new Course(title, type, stream, startDate, endDate);
             Courses.Add(newCourse);
@@ -165,7 +165,7 @@ namespace Assignment_P_V.Helpers
             string title = Console.ReadLine();
             Console.WriteLine("Please type the Description");
             string description = Console.ReadLine();
-            Console.WriteLine("Please type the Subscription Date");
+            Console.WriteLine("Please type the Subscription Date. (dd/mm/yyyy)");
             DateTime subDateTime = Convert.ToDateTime(Console.ReadLine());
             Console.WriteLine("Please type the Oral Mark");
             int oralMark = Convert.ToInt32(Console.ReadLine());
