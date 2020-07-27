@@ -1,0 +1,26 @@
+[
+    {
+        "FirstName": "Panos",
+        "LastName": "Varamentis",
+        "DateOfBirth": "\/Date(-62135596800000)\/",
+        "Fees": 2000
+    },
+    {
+        "FirstName": "Antonis",
+        "LastName": "Pantelakis",
+        "DateOfBirth": "\/Date(-62135596800000)\/",
+        "Fees": 200
+    },
+    {
+        "FirstName": "George",
+        "LastName": "Bouznian",
+        "DateOfBirth": "\/Date(-62135596800000)\/",
+        "Fees": 2000
+    },
+    {
+        "FirstName": "Kostas",
+        "LastName": "Vasillis",
+        "DateOfBirth": "\/Date(-62135596800000)\/",
+        "Fees": 45000
+    }
+]

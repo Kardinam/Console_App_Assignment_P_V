@@ -44,8 +44,12 @@
     <Reference Include="ConsoleUI, Version=1.0.15.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\ConsoleUI.1.0.15.0\lib\net45\ConsoleUI.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -56,7 +60,9 @@
   <ItemGroup>
     <Compile Include="Helpers\EntityCreator.cs" />
     <Compile Include="Helpers\MenuHelper.cs" />
+    <Compile Include="Helpers\OutputManager.cs" />
     <Compile Include="Models\EntityTypes.cs" />
+    <Compile Include="Models\OutputChoices.cs" />
     <Compile Include="Models\Αssignment.cs" />
     <Compile Include="Models\Course.cs" />
     <Compile Include="Program.cs" />

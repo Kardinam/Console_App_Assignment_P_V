@@ -12,6 +12,7 @@ namespace Assignment_P_V.Models
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public List<Student> Students { get; set; }
+        public List<Trainer> Trainers { get; set; }
         public Course(string title, string type, string stream, DateTime startDate, DateTime endDate)
         {
             Title = title;
@@ -20,6 +21,7 @@ namespace Assignment_P_V.Models
             StartDate = startDate;
             EndDate = endDate;
             Students = new List<Student>();
+            Trainers = new List<Trainer>();
         }
     }
 

@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Web.Script.Serialization;
 using Assignment_P_V.Helpers;
 
 namespace Assignment_P_V
@@ -33,6 +35,19 @@ namespace Assignment_P_V
             {
                 EntityManager.CreateSyntheticData();
             }
+            while (true)
+            {
+                OutputManager.Initialize();
+            }
+            //var students= new JavaScriptSerializer().Serialize(EntityManager.Students);
+            //var courses = new JavaScriptSerializer().Serialize(EntityManager.Courses);
+            //var assignments = new JavaScriptSerializer().Serialize(EntityManager.Assignments);
+            //var trainer = new JavaScriptSerializer().Serialize(EntityManager.Trainers);
+            //using (StreamWriter file = new StreamWriter(@"C:\Users\pkard\source\repos\Assignment_P_V\data.json", true))
+            //{
+            //    file.Write(assignments);
+            //    file.Close();
+            //}
         }
     }
 }
